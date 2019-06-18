@@ -22,7 +22,7 @@ text_file= open("ShipLinkOutput.txt", "r")
 lines = text_file.read().split('\n')
 # print(len(lines))
 curr_dir = os.path.dirname(os.path.abspath(__file__))
-dest_dir = os.path.join(curr_dir, 'output')
+dest_dir = os.path.join(curr_dir, 'output', 'ships')
 # print(dest_dir)
 
 for line in lines:
