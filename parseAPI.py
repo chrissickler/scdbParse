@@ -26,3 +26,4 @@ def mainLoop(url):
 
 
 mainLoop(urlParam)
+text_file.close()
