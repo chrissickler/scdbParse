@@ -15,12 +15,12 @@ for i in range(len(html) - 3):
         string = html[i: i+pos+4]
         string = string.split("\"")
         string = urlMain + string[1]
-        print(string)
+        # print(string)
         text_file.write("%s\n" % string)
 text_file.close
 text_file= open("ShipLinkOutput.txt", "r")
 lines = text_file.read().split('\n')
-print(len(lines))
+# print(len(lines))
 curr_dir = os.path.dirname(os.path.abspath(__file__))
 dest_dir = os.path.join(curr_dir, 'output')
 # print(dest_dir)
@@ -37,5 +37,6 @@ for line in lines:
         with open(path, 'w') as outfile:
             json.dump(data, outfile)
 
+text_file.close()
 
 
