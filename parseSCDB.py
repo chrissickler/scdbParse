@@ -39,6 +39,6 @@ for line in lines:
 
 text_file.close()
 
-
+# start at http://starcitizendb.com/api/ and loop thru each page
 
 
